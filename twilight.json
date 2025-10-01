@@ -232,10 +232,10 @@
                     "value": "<div style='margin: -24px -20px 20px'><img class='w-full' src='https://cdn.salla.network/images/themes/raed/preview-images/images-slider-enhancement.png?v=1.1'></div>"
                 },
                 {
-                  "type": "static",
-                  "format": "description",
-                  "id": "enhance-slider-note",
-                  "value": "<div style='background-color: #ddedff;color: #0a5a90;padding: 16px 20px;font-size: 14px;border-radius: 4px; margin: 0 0 30px;'>هذا العنصر غير مناسب لعرض البنرات، يمكنك استخدام عنصر <strong>صور متحركة</strong> بدلاً منه لتظهر صورة البنر بشكل كامل</div>"
+                    "type": "static",
+                    "format": "description",
+                    "id": "enhance-slider-note",
+                    "value": "<div style='background-color: #ddedff;color: #0a5a90;padding: 16px 20px;font-size: 14px;border-radius: 4px; margin: 0 0 30px;'>هذا العنصر غير مناسب لعرض البنرات، يمكنك استخدام عنصر <strong>صور متحركة</strong> بدلاً منه لتظهر صورة البنر بشكل كامل</div>"
                 },
                 {
                     "id": "slides",
@@ -325,11 +325,26 @@
                     "value": "600px",
                     "required": false,
                     "options": [
-                        {"value": "400px", "text": "صغير (400px)"},
-                        {"value": "500px", "text": "متوسط (500px)"},
-                        {"value": "600px", "text": "كبير (600px)"},
-                        {"value": "700px", "text": "كبير جداً (700px)"},
-                        {"value": "100vh", "text": "ملء الشاشة"}
+                        {
+                            "value": "400px",
+                            "text": "صغير (400px)"
+                        },
+                        {
+                            "value": "500px",
+                            "text": "متوسط (500px)"
+                        },
+                        {
+                            "value": "600px",
+                            "text": "كبير (600px)"
+                        },
+                        {
+                            "value": "700px",
+                            "text": "كبير جداً (700px)"
+                        },
+                        {
+                            "value": "100vh",
+                            "text": "ملء الشاشة"
+                        }
                     ]
                 },
                 {
@@ -396,10 +411,22 @@
                             "value": "upload",
                             "required": true,
                             "options": [
-                                {"value": "upload", "text": "رفع مباشر (MP4/WebM)"},
-                                {"value": "youtube", "text": "YouTube"},
-                                {"value": "vimeo", "text": "Vimeo"},
-                                {"value": "url", "text": "رابط مباشر"}
+                                {
+                                    "value": "upload",
+                                    "text": "رفع مباشر (MP4/WebM)"
+                                },
+                                {
+                                    "value": "youtube",
+                                    "text": "YouTube"
+                                },
+                                {
+                                    "value": "vimeo",
+                                    "text": "Vimeo"
+                                },
+                                {
+                                    "value": "url",
+                                    "text": "رابط مباشر"
+                                }
                             ]
                         },
                         {
@@ -1286,6 +1313,13 @@
                     "maxLength": 30
                 }
             ]
+        },
+        {
+            "key": "c2d3d0c7-3341-4ad8-a7ea-b8d681868d6f",
+            "title": "Video Hero",
+            "icon": "sicon-store",
+            "path": "video-hero",
+            "fields": []
         }
     ],
     "support_url": "https://salla.com/",
