@@ -232,10 +232,10 @@
                     "value": "<div style='margin: -24px -20px 20px'><img class='w-full' src='https://cdn.salla.network/images/themes/raed/preview-images/images-slider-enhancement.png?v=1.1'></div>"
                 },
                 {
-                  "type": "static",
-                  "format": "description",
-                  "id": "enhance-slider-note",
-                  "value": "<div style='background-color: #ddedff;color: #0a5a90;padding: 16px 20px;font-size: 14px;border-radius: 4px; margin: 0 0 30px;'>هذا العنصر غير مناسب لعرض البنرات، يمكنك استخدام عنصر <strong>صور متحركة</strong> بدلاً منه لتظهر صورة البنر بشكل كامل</div>"
+                    "type": "static",
+                    "format": "description",
+                    "id": "enhance-slider-note",
+                    "value": "<div style='background-color: #ddedff;color: #0a5a90;padding: 16px 20px;font-size: 14px;border-radius: 4px; margin: 0 0 30px;'>هذا العنصر غير مناسب لعرض البنرات، يمكنك استخدام عنصر <strong>صور متحركة</strong> بدلاً منه لتظهر صورة البنر بشكل كامل</div>"
                 },
                 {
                     "id": "slides",
@@ -303,7 +303,300 @@
                 }
             ]
         },
+<<<<<<< HEAD
 
+=======
+        {
+            "key": "video-hero-component-2024",
+            "title": "فيديو البطل (Video Hero)",
+            "icon": "sicon-video",
+            "image": "https://cdn.salla.sa/mQgZlG/video-hero-preview.png",
+            "path": "home.video-hero",
+            "is_default": false,
+            "fields": [
+                {
+                    "type": "static",
+                    "format": "description",
+                    "id": "video-hero-desc",
+                    "value": "<div style='margin: -24px -20px 20px; padding: 16px; background: #f8f9fa; border-radius: 8px;'><h6 style='margin-bottom: 10px; color: #2563eb;'>🎬 عنصر فيديو البطل</h6><p style='margin: 0; color: #6b7280; font-size: 14px;'>اعرض فيديوهات جذابة في مقدمة متجرك مع دعم جميع أنواع الفيديوهات: MP4، YouTube، Vimeo، والروابط المباشرة</p></div>"
+                },
+                {
+                    "type": "select",
+                    "icon": "sicon-settings",
+                    "label": "ارتفاع الفيديو",
+                    "id": "height",
+                    "value": "600px",
+                    "required": false,
+                    "options": [
+                        {
+                            "value": "400px",
+                            "text": "صغير (400px)"
+                        },
+                        {
+                            "value": "500px",
+                            "text": "متوسط (500px)"
+                        },
+                        {
+                            "value": "600px",
+                            "text": "كبير (600px)"
+                        },
+                        {
+                            "value": "700px",
+                            "text": "كبير جداً (700px)"
+                        },
+                        {
+                            "value": "100vh",
+                            "text": "ملء الشاشة"
+                        }
+                    ]
+                },
+                {
+                    "type": "range",
+                    "icon": "sicon-opacity",
+                    "label": "شفافية الطبقة العلوية",
+                    "id": "overlay_opacity",
+                    "value": 60,
+                    "required": false,
+                    "min": 0,
+                    "max": 90,
+                    "step": 10,
+                    "description": "تحكم في شفافية الطبقة المظلمة فوق الفيديو لتحسين وضوح النص"
+                },
+                {
+                    "type": "boolean",
+                    "icon": "sicon-play",
+                    "label": "تشغيل تلقائي للسلايدر",
+                    "id": "auto_slide",
+                    "value": true,
+                    "required": false,
+                    "description": "تشغيل السلايدر تلقائياً عند وجود أكثر من فيديو واحد"
+                },
+                {
+                    "type": "number",
+                    "icon": "sicon-time",
+                    "label": "مدة عرض كل فيديو (بالثواني)",
+                    "id": "slide_delay",
+                    "value": 5,
+                    "required": false,
+                    "min": 3,
+                    "max": 15,
+                    "description": "المدة الزمنية لعرض كل فيديو في السلايدر"
+                },
+                {
+                    "id": "videos",
+                    "type": "collection",
+                    "format": "collection",
+                    "required": true,
+                    "minLength": 1,
+                    "maxLength": 5,
+                    "label": null,
+                    "item_label": "فيديو",
+                    "value": [
+                        {
+                            "videos.type": "upload",
+                            "videos.source": "",
+                            "videos.poster": "https://cdn.salla.sa/ZrBEO/video-poster-example.jpg",
+                            "videos.title": "مرحباً بك في متجرنا",
+                            "videos.description": "اكتشف مجموعتنا الرائعة من المنتجات عالية الجودة",
+                            "videos.autoplay": false,
+                            "videos.muted": true,
+                            "videos.loop": true,
+                            "videos.button_text": "تسوق الآن",
+                            "videos.button_url": "/products"
+                        }
+                    ],
+                    "fields": [
+                        {
+                            "type": "select",
+                            "icon": "sicon-video",
+                            "label": "نوع الفيديو",
+                            "id": "videos.type",
+                            "value": "upload",
+                            "required": true,
+                            "options": [
+                                {
+                                    "value": "upload",
+                                    "text": "رفع مباشر (MP4/WebM)"
+                                },
+                                {
+                                    "value": "youtube",
+                                    "text": "YouTube"
+                                },
+                                {
+                                    "value": "vimeo",
+                                    "text": "Vimeo"
+                                },
+                                {
+                                    "value": "url",
+                                    "text": "رابط مباشر"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "string",
+                            "icon": "sicon-video",
+                            "label": "مصدر الفيديو",
+                            "id": "videos.source",
+                            "value": null,
+                            "required": true,
+                            "format": "file",
+                            "description": "ارفع ملف الفيديو أو أدخل معرف YouTube/Vimeo أو الرابط المباشر",
+                            "placeholder": "اختر ملف فيديو أو أدخل الرابط...",
+                            "conditions": [
+                                {
+                                    "id": "videos.type",
+                                    "operation": "=",
+                                    "value": "upload"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "string",
+                            "icon": "sicon-youtube",
+                            "label": "معرف فيديو YouTube",
+                            "id": "videos.source",
+                            "value": null,
+                            "required": true,
+                            "format": "text",
+                            "description": "أدخل معرف الفيديو من YouTube (مثال: dQw4w9WgXcQ)",
+                            "placeholder": "dQw4w9WgXcQ",
+                            "conditions": [
+                                {
+                                    "id": "videos.type",
+                                    "operation": "=",
+                                    "value": "youtube"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "string",
+                            "icon": "sicon-video",
+                            "label": "معرف فيديو Vimeo",
+                            "id": "videos.source",
+                            "value": null,
+                            "required": true,
+                            "format": "text",
+                            "description": "أدخل معرف الفيديو من Vimeo (مثال: 123456789)",
+                            "placeholder": "123456789",
+                            "conditions": [
+                                {
+                                    "id": "videos.type",
+                                    "operation": "=",
+                                    "value": "vimeo"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "string",
+                            "icon": "sicon-link",
+                            "label": "رابط الفيديو المباشر",
+                            "id": "videos.source",
+                            "value": null,
+                            "required": true,
+                            "format": "url",
+                            "description": "أدخل الرابط المباشر للفيديو",
+                            "placeholder": "https://example.com/video.mp4",
+                            "conditions": [
+                                {
+                                    "id": "videos.type",
+                                    "operation": "=",
+                                    "value": "url"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "string",
+                            "icon": "sicon-image",
+                            "label": "صورة الغلاف (Poster)",
+                            "id": "videos.poster",
+                            "value": null,
+                            "required": false,
+                            "format": "image",
+                            "description": "صورة تظهر قبل تشغيل الفيديو - المقاس المناسب 1920×1080 بكسل",
+                            "placeholder": null
+                        },
+                        {
+                            "type": "string",
+                            "icon": "sicon-format-text-alt",
+                            "label": "عنوان الفيديو",
+                            "multilanguage": true,
+                            "id": "videos.title",
+                            "value": null,
+                            "required": false,
+                            "format": "text",
+                            "description": "عنوان يظهر فوق الفيديو",
+                            "placeholder": "أدخل عنوان الفيديو...",
+                            "maxLength": 100
+                        },
+                        {
+                            "type": "string",
+                            "icon": "sicon-typography",
+                            "label": "وصف الفيديو",
+                            "multilanguage": true,
+                            "id": "videos.description",
+                            "value": null,
+                            "required": false,
+                            "format": "textarea",
+                            "description": "وصف يظهر تحت العنوان",
+                            "placeholder": "أدخل وصف الفيديو...",
+                            "maxLength": 255
+                        },
+                        {
+                            "type": "string",
+                            "icon": "sicon-cursor-click",
+                            "label": "نص الزر",
+                            "multilanguage": true,
+                            "id": "videos.button_text",
+                            "value": null,
+                            "required": false,
+                            "format": "text",
+                            "description": "نص زر الإجراء (اختياري)",
+                            "placeholder": "تسوق الآن",
+                            "maxLength": 50
+                        },
+                        {
+                            "type": "string",
+                            "icon": "sicon-link",
+                            "label": "رابط الزر",
+                            "id": "videos.button_url",
+                            "value": null,
+                            "required": false,
+                            "format": "url",
+                            "description": "رابط زر الإجراء",
+                            "placeholder": "/products"
+                        },
+                        {
+                            "type": "boolean",
+                            "icon": "sicon-play",
+                            "label": "تشغيل تلقائي",
+                            "id": "videos.autoplay",
+                            "value": false,
+                            "required": false,
+                            "description": "تشغيل الفيديو تلقائياً (يُنصح بتفعيل كتم الصوت)"
+                        },
+                        {
+                            "type": "boolean",
+                            "icon": "sicon-volume-off",
+                            "label": "كتم الصوت",
+                            "id": "videos.muted",
+                            "value": true,
+                            "required": false,
+                            "description": "كتم صوت الفيديو افتراضياً"
+                        },
+                        {
+                            "type": "boolean",
+                            "icon": "sicon-refresh",
+                            "label": "تكرار الفيديو",
+                            "id": "videos.loop",
+                            "value": true,
+                            "required": false,
+                            "description": "إعادة تشغيل الفيديو تلقائياً عند انتهائه"
+                        }
+                    ]
+                }
+            ]
+        },
+>>>>>>> 47b77449d29a0f01efed2de565233f528d5f786b
         {
             "key": "2b1b130b-5b37-422a-9683-e0fd367460c0",
             "title": "روابط سريعة",
