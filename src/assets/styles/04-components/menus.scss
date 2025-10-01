@@ -15,7 +15,7 @@
 
     li{
       > a{
-        @apply flex justify-between items-center transition duration-300 p-3 text-sm hover:text-primary hover:no-underline; 
+        @apply flex justify-between items-center transition-all duration-300 ease-out p-3 text-sm hover:text-primary hover:no-underline rounded-lg hover:bg-gray-50; 
       }
 
       &.root-level{
@@ -57,7 +57,7 @@
     }
 
     .sub-menu {
-      @apply z-20 transition opacity-0 invisible absolute bg-white -translate-y-3 shadow-default rounded-b-md border-t border-gray-300/30;
+      @apply z-20 transition-all duration-300 ease-out opacity-0 invisible absolute bg-white -translate-y-3 shadow-lg rounded-lg border border-gray-200/50;
 
       .sub-menu {
         top: -1px;

@@ -1,13 +1,19 @@
   
 // Wishlist Product entry
 .product-entry {
-  @apply h-full transition-shadow duration-300 bg-white hover:shadow-default rounded-lg justify-between flex relative;
+  @apply h-full transition-all duration-500 ease-out bg-white shadow-light hover:shadow-md rounded-xl justify-between flex relative border border-gray-100;
+  transform: translateY(0);
+
+  &:hover {
+    transform: translateY(-4px);
+    @apply shadow-lg border-gray-200;
+  }
 
   &--wishlist {
     @apply justify-between p-4 flex-col sm:flex-row;
 
     .product-entry__image {
-      @apply overflow-hidden w-16 h-12 md:w-20 md:h-16 rounded-md;
+      @apply overflow-hidden w-16 h-12 md:w-20 md:h-16 rounded-lg;
     }
 
     salla-button{

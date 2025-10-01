@@ -27,4 +27,29 @@ report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
 .DS_Store
 
+# Built assets (generated files)
+public/app.css
+public/app.js
+public/app.js.LICENSE.txt
+public/*.js
+public/*.css
+public/*.LICENSE.txt
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+Thumbs.db
+
 

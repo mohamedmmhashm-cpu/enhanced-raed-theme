@@ -68,9 +68,11 @@ module.exports = {
             boxShadow          : {
                 'default' : '5px 10px 30px #2B2D340D;',
                 'top'     : '0px 0px 10px #0000001A;',
-                'md'      : '5px 10px 99px #2B2D340D',
+                'md'      : '0 4px 20px rgba(0, 0, 0, 0.08)',
+                'lg'      : '0 8px 30px rgba(0, 0, 0, 0.12)',
                 'dropdown'      : '0 4px 8px rgba(161, 121, 121, 0.07)',
-                'light'   : '0px 4px 15px rgba(1, 1, 1, 0.06)',
+                'light'   : '0 2px 8px rgba(0, 0, 0, 0.04)',
+                'soft'    : '0 2px 15px rgba(0, 0, 0, 0.06)',
                 'huge'    : '0px 3px 6px #00000029',
                 'progress': '0 5px 15px rgba(92, 213, 196, 0.4)',
                 'mobile': 'rgb(0 0 0 / 9%) 0px 2px 1px, rgb(0 0 0 / 9%) 0px 4px 2px, rgb(0 0 0 / 9%) 0px 8px 4px, rgb(0 0 0 / 9%) 0px 16px 18px, rgb(0 0 0 / 9%) -15px 10px 7px, rgb(0 0 0 / 9%) -20px 10px 20px, rgb(0 0 0 / 9%) -20px 10px 20px, rgb(0 0 0 / 9%) -25px 20px 20px',

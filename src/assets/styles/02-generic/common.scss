@@ -407,3 +407,69 @@ salla-modal {
     @apply text-primary hover:text-primary-d;
   }
 }
+
+/* Enhanced Card Components */
+.card-enhanced {
+  @apply bg-white rounded-xl shadow-soft border border-gray-100 transition-all duration-300 ease-out;
+  
+  &:hover {
+    @apply shadow-lg border-gray-200 -translate-y-1;
+  }
+}
+
+.card-product {
+  @apply bg-white rounded-xl shadow-light border border-gray-50 transition-all duration-300 ease-out overflow-hidden;
+  
+  &:hover {
+    @apply shadow-md border-gray-100 -translate-y-1;
+    
+    .card-product__image {
+      @apply scale-105;
+    }
+  }
+  
+  &__image {
+    @apply transition-transform duration-500 ease-out;
+  }
+  
+  &__content {
+    @apply p-4;
+  }
+}
+
+/* Enhanced Spacing and Layout */
+.container-enhanced {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.section-spacing {
+  @apply py-12 lg:py-16;
+}
+
+.grid-enhanced {
+  @apply grid gap-6 sm:gap-8;
+  
+  &--2-cols {
+    @apply grid-cols-1 sm:grid-cols-2;
+  }
+  
+  &--3-cols {
+    @apply grid-cols-1 sm:grid-cols-2 lg:grid-cols-3;
+  }
+  
+  &--4-cols {
+    @apply grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4;
+  }
+}
+
+.text-enhanced {
+  @apply leading-relaxed;
+  
+  &--heading {
+    @apply font-bold text-gray-900 leading-tight;
+  }
+  
+  &--subheading {
+    @apply text-gray-600 leading-relaxed;
+  }
+}

@@ -19,7 +19,7 @@ salla-button {
 }
 
 .btn {
-  @apply transition duration-300 flex-1 inline-flex justify-center items-center px-6 pb-2.5 pt-2 text-sm font-bold rounded-md hover:opacity-80 whitespace-nowrap;
+  @apply transition-all duration-300 ease-out flex-1 inline-flex justify-center items-center px-6 pb-2.5 pt-2 text-sm font-bold rounded-lg hover:opacity-90 hover:shadow-soft hover:-translate-y-0.5 whitespace-nowrap;
 
   .loader {
     width: 0;
@@ -90,7 +90,7 @@ salla-button {
   }
 
   &--icon {
-    @apply flex items-center justify-center transition bg-white text-gray-500 border-gray-200  hover:border-gray-200 hover:text-gray-600 mx-1 border rounded-full w-10 h-10 font-medium flex-shrink-0;
+    @apply flex items-center justify-center transition-all duration-300 ease-out bg-white text-gray-500 border-gray-200 hover:border-gray-300 hover:text-gray-600 hover:shadow-soft hover:-translate-y-0.5 mx-1 border rounded-full w-10 h-10 font-medium flex-shrink-0;
 
     i {
       @apply pointer-events-none;
