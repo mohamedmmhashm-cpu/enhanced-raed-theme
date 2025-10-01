@@ -18,8 +18,8 @@ importers:
         specifier: ^3.7.3
         version: 3.7.3
       lite-youtube-embed:
-        specifier: ^0.2.0
-        version: 0.2.0
+        specifier: ^0.3.3
+        version: 0.3.3
       mmenu-light:
         specifier: ^3.0.9
         version: 3.2.2
@@ -2010,8 +2010,8 @@ packages:
   lines-and-columns@1.2.4:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
 
-  lite-youtube-embed@0.2.0:
-    resolution: {integrity: sha512-XXXAk5sbvtjjwbie3XG+6HppgTm1HTGL/Uk9z9NkJH53o7puZLur434heHzAjkS60hZB3vT4ls25zl5rMiX4EA==}
+  lite-youtube-embed@0.3.3:
+    resolution: {integrity: sha512-gFfVVnj6NRjxVfJKo3qoLtpi0v5mn3AcR4eKD45wrxQuxzveFJUb+7Cr6uV6n+DjO8X3p0UzPPquhGt0H/y+NA==}
 
   loader-runner@4.3.0:
     resolution: {integrity: sha512-3R/1M+yS3j5ou80Me59j7F9IMs4PXs3VqRrm0TU3AbKPxlmpoY1TNscJV/oGJXo8qCatFGTfDbY6W6ipGOYXfg==}
@@ -5126,7 +5126,7 @@ snapshots:
 
   lines-and-columns@1.2.4: {}
 
-  lite-youtube-embed@0.2.0: {}
+  lite-youtube-embed@0.3.3: {}
 
   loader-runner@4.3.0: {}
 
