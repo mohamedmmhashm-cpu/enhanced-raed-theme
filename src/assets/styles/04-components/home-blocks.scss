@@ -52,6 +52,166 @@
   }
 }
 
+/*
+  Video Hero Component
+*/
+.s-block--video-hero {
+  @apply relative overflow-hidden;
+
+  .video-hero-container {
+    @apply relative w-full;
+    min-height: 500px;
+
+    @screen sm {
+      min-height: 600px;
+    }
+
+    @screen lg {
+      min-height: 700px;
+    }
+  }
+
+  .video-hero-item {
+    @apply relative w-full h-full;
+  }
+
+  .video-hero-background {
+    @apply absolute inset-0 w-full h-full;
+
+    .video-element,
+    .youtube-iframe,
+    .vimeo-iframe {
+      @apply absolute inset-0 w-full h-full object-cover;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .video-poster {
+      @apply absolute inset-0 w-full h-full object-cover transition-opacity duration-300;
+      z-index: 1;
+
+      &.loaded {
+        @apply opacity-0;
+      }
+    }
+
+    .youtube-video-container,
+    .vimeo-video-container {
+      @apply relative w-full h-full;
+
+      &::before {
+        @apply content-[''] absolute inset-0 bg-black/20 z-10 pointer-events-none;
+      }
+    }
+  }
+
+  .video-overlay {
+    @apply absolute inset-0 pointer-events-none transition-opacity duration-300;
+    background: linear-gradient(
+      135deg,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0.2) 50%,
+      rgba(0, 0, 0, 0.6) 100%
+    );
+  }
+
+  .video-hero-content {
+    @apply absolute inset-0 flex items-center justify-center z-20;
+
+    .video-hero-title {
+      @apply text-white font-bold leading-tight mb-4;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+      
+      @screen sm {
+        @apply text-4xl;
+      }
+      
+      @screen lg {
+        @apply text-5xl;
+      }
+    }
+
+    .video-hero-description {
+      @apply text-white opacity-90 leading-relaxed;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+      
+      @screen md {
+        @apply text-xl;
+      }
+    }
+
+    .video-hero-cta {
+      @apply mt-8;
+
+      .btn {
+        @apply transition-all duration-300 shadow-lg;
+        
+        &:hover {
+          @apply scale-105 shadow-xl;
+        }
+      }
+    }
+  }
+
+  .video-hero-fallback {
+    @apply flex items-center justify-center h-96 bg-gray-200 text-gray-500 rounded-lg;
+
+    i {
+      @apply text-4xl mb-4 opacity-50;
+    }
+
+    p {
+      @apply text-lg opacity-70;
+    }
+  }
+
+  // Responsive adjustments
+  @media (max-width: 640px) {
+    .video-hero-content {
+      @apply px-4;
+
+      .video-hero-title {
+        @apply text-2xl mb-3;
+      }
+
+      .video-hero-description {
+        @apply text-base;
+      }
+
+      .video-hero-cta {
+        @apply mt-6;
+
+        .btn {
+          @apply px-6 py-2 text-sm;
+        }
+      }
+    }
+  }
+
+  // Performance optimizations
+  .video-element {
+    &[data-loaded="false"] {
+      @apply opacity-0;
+    }
+
+    &[data-loaded="true"] {
+      @apply opacity-100;
+    }
+  }
+
+  // Intersection observer loading states
+  &[data-in-view="false"] {
+    .video-element {
+      @apply opacity-0;
+    }
+  }
+
+  &[data-in-view="true"] {
+    .video-element {
+      @apply opacity-100;
+    }
+  }
+}
+
 /* Banner Block */
 .banner {
   @media screen and (min-width: 768px) {
