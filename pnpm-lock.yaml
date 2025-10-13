@@ -24,8 +24,8 @@ importers:
         specifier: ^3.0.9
         version: 3.2.2
       sweetalert2:
-        specifier: ^11.22.2
-        version: 11.22.2
+        specifier: ^11.26.2
+        version: 11.26.2
     devDependencies:
       '@babel/core':
         specifier: ^7.28.0
@@ -2841,8 +2841,8 @@ packages:
     engines: {node: '>=16'}
     hasBin: true
 
-  sweetalert2@11.22.2:
-    resolution: {integrity: sha512-GFQGzw8ZXF23PO79WMAYXLl4zYmLiaKqYJwcp5eBF07wiI5BYPbZtKi2pcvVmfUQK+FqL1risJAMxugcPbGIyg==}
+  sweetalert2@11.26.2:
+    resolution: {integrity: sha512-tR5oADjrN6gv+0Y/tpfMXM/rSlx/QHmRhygBHhWh29iw1AO/x7D8OhghyogaY+NLZrd4qfhssVafRBHi+DREzQ==}
 
   swiper@8.4.7:
     resolution: {integrity: sha512-VwO/KU3i9IV2Sf+W2NqyzwWob4yX9Qdedq6vBtS0rFqJ6Fa5iLUJwxQkuD4I38w0WDJwmFl8ojkdcRFPHWD+2g==}
@@ -5923,7 +5923,7 @@ snapshots:
       picocolors: 1.1.1
       sax: 1.4.1
 
-  sweetalert2@11.22.2: {}
+  sweetalert2@11.26.2: {}
 
   swiper@8.4.7:
     dependencies:
